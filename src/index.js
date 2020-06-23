@@ -6,20 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault()
     
     count++
-    let value = event.target[0].value;
-    
-    addTask(count, value)
-  }, false);
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  // your code here
-  var count = 0
-  
-  document.getElementById("create-task-form").addEventListener("submit", (event) => { 
-    event.preventDefault()
-    
-    count++
     addTask(count, event.target[0].value)
   }, false);
 });
