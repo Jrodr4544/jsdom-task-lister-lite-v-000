@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault()
     
     count++
-    addTask(count, event.target[0].value)
+    let value = event.target[0].value;
+    
+    addTask(count, value)
   }, false);
 });
 
